@@ -41,7 +41,7 @@ Before you begin, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/constantlb/to-do-app.git
-   cd todo-list-app
+   cd todo-app
    ```
 
 2. **Install dependencies**:
