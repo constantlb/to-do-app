@@ -4,7 +4,6 @@ import { MockStore, provideMockStore } from '@ngrx/store/testing';
 import { Task } from '../../models/task.model';
 import { loadTasks, deleteExpiredTasks, reorderTasks } from '../../store/task.actions';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
-import { of } from 'rxjs';
 
 describe('TodoListComponent', () => {
   let component: TodoListComponent;

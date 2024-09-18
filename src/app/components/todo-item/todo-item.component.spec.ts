@@ -1,13 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TodoItemComponent } from './todo-item.component';
 import { FormsModule } from '@angular/forms';
-import { Store } from '@ngrx/store';
 import { By } from '@angular/platform-browser';
 import { toggleTaskCompletion, deleteTask, updateTask } from '../../store/task.actions';
 import { Task } from '../../models/task.model';
 import { AppState } from '../../store/app.store';  // Ensure AppState is imported
 import { MockStore, provideMockStore } from '@ngrx/store/testing';  // Use MockStore for testing
-import { of } from 'rxjs';  // To simulate observables if needed
 
 describe('TodoItemComponent', () => {
   let component: TodoItemComponent;
