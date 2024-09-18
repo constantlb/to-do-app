@@ -1,0 +1,62 @@
+.add-task-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-task-form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  margin: 14px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s;
+}
+
+.task-input:focus {
+  border-color: #007bff;
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.add-task-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.add-task-button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.add-task-button:not(:disabled):active {
+  background-color: #004085;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}

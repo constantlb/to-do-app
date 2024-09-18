@@ -1,0 +1,19 @@
+<div class="todo-item" [class.completed]="task.isCompleted">
+  <!-- Checkbox -->
+  <label class="checkbox-container">
+    <input type="checkbox" [checked]="task.isCompleted" (change)="toggleTaskCompletion()"/>
+    <span class="checkmark"></span>
+  </label>
+
+  <!-- Input field for editing task title -->
+  <input
+    type="text"
+    [(ngModel)]="editableTitle"
+    (blur)="updateTaskTitle()"
+    (keyup.enter)="updateTaskTitle()"
+    class="task-title-input"
+  />
+
+  <!-- Delete Button (Edit button removed) -->
+  <button class="delete-button" (click)="deleteTask()">Delete</button>
+</div>

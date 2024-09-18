@@ -1,0 +1,70 @@
+.top-bar {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-bar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #477896;
+}
+
+.todo-list-container {
+  margin-top: 80px;  /* Push the content below the top bar */
+  margin-bottom: 80px;  /* Push the content above the bottom bar */
+  padding: 0 20px;
+  overflow-y: auto;  /* Allow scrolling if tasks exceed the page height */
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.no-tasks-message {
+  color: #888;
+  text-align: center;
+  font-size: 16px;
+}
+
+.todo-item {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button {
+  margin-left: 10px;
+}
